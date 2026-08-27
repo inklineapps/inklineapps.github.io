@@ -73,6 +73,28 @@
   <li><strong>Confluence Cloud only.</strong> Data Center is not supported.</li>
 </ul>
 
+<h3>Size on page</h3>
+<p>
+  In the editor, <strong>Size on page</strong> controls how big the diagram rests at for
+  everyone reading it. It is saved with the diagram.
+</p>
+<table>
+  <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Fit to width</strong> (default)</td>
+        <td>Fills the page column, so a small diagram is readable without anyone zooming.
+            A diagram wider than the column is scaled down to fit.</td></tr>
+    <tr><td><strong>Actual size</strong></td>
+        <td>Renders at Mermaid's natural size, scaled down only if it will not fit.</td></tr>
+  </tbody>
+</table>
+<p>
+  This is saved as a setting rather than a fixed width, so it is recomputed against each
+  reader's own column — it stays correct with the sidebar open or closed, on a split screen
+  and on a phone. Zoom, by contrast, is temporary and personal: it changes what you see now
+  and nothing for anyone else.
+</p>
+
 <h3>The viewing area grows as you zoom</h3>
 <p>
   There is no separate expand button. As you zoom in, the viewing area grows with the diagram
