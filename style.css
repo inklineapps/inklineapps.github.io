@@ -61,3 +61,30 @@ pre { background: var(--code-bg); padding: 16px; border-radius: 6px; overflow-x:
 pre code { background: none; padding: 0; }
 .callout { border-left: 3px solid var(--accent); padding: 2px 0 2px 16px; margin: 20px 0; color: var(--muted); }
 footer.site { border-top: 1px solid var(--rule); margin-top: 64px; padding-top: 20px; color: var(--muted); font-size: 14px; }
+
+/* --- app index cards (home page) --- */
+.apps { display: grid; gap: 16px; margin: 24px 0 0; }
+.app-card {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 20px 22px;
+  transition: border-color .12s ease;
+}
+.app-card:hover { border-color: var(--accent); }
+.app-card h3 { margin: 0 0 6px; font-size: 17px; }
+.app-card h3 a { text-decoration: none; }
+.app-card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+.app-card .meta { font-size: 13px; color: var(--muted); }
+.app-card .meta a { margin-right: 14px; }
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 2px 9px;
+  color: var(--muted);
+  margin-left: 8px;
+  vertical-align: 2px;
+}
