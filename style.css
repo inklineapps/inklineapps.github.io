@@ -1,0 +1,63 @@
+:root {
+  --bg: #ffffff;
+  --fg: #172b4d;
+  --muted: #5e6c84;
+  --rule: #dfe1e6;
+  --accent: #0052cc;
+  --code-bg: #f4f5f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d2125;
+    --fg: #c7d1db;
+    --muted: #8c9bab;
+    --rule: #2c333a;
+    --accent: #85b8ff;
+    --code-bg: #22272b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+header.site {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+header.site a.brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--fg);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+header.site nav { margin-left: auto; display: flex; gap: 18px; }
+header.site nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
+header.site nav a:hover { color: var(--accent); }
+h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 16px; margin: 26px 0 6px; }
+p, li { color: var(--fg); }
+.lede { color: var(--muted); font-size: 17px; margin: 0 0 32px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+a { color: var(--accent); }
+ul { padding-left: 22px; }
+li { margin: 5px 0; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+code { background: var(--code-bg); padding: 2px 5px; border-radius: 3px; font-size: 0.9em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+pre { background: var(--code-bg); padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 14px; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+.callout { border-left: 3px solid var(--accent); padding: 2px 0 2px 16px; margin: 20px 0; color: var(--muted); }
+footer.site { border-top: 1px solid var(--rule); margin-top: 64px; padding-top: 20px; color: var(--muted); font-size: 14px; }
